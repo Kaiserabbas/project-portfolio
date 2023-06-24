@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   padding: 0;
   margin: 0;
@@ -26,9 +27,7 @@ ul {
 
 header {
   position: fixed;
-  /* margin-right: 50px; */
   width: 90vw;
-  /* background-color: #fff; */
   color: #6070ff;
   display: flex;
   justify-content: space-between;
@@ -49,18 +48,18 @@ header {
 
 @keyframes logo {
   0% {
-     left: 0;
-     top: 0;
+    left: 0;
+    top: 0;
   }
 
   25% {
-      left: 200px;
-      top: 0;
+    left: 200px;
+    top: 0;
   }
 
   100% {
-      left: 0;
-      top: 0;
+    left: 0;
+    top: 0;
   }
 }
 
@@ -71,7 +70,7 @@ header {
   width: 40px;
   height: 40px;
   cursor: pointer;
-}    
+}
 
 .desk-ul {
   display: none;
@@ -119,7 +118,7 @@ header {
 .main-h1 {
   margin: 10px 0;
   display: flex;
-  font-family: 'Poppins' sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -131,13 +130,13 @@ header {
 
 @keyframes fadeIn {
   from {
-       color: #930101;
-       transform: translateX(-40px);
+    color: #930101;
+    transform: translateX(-40px);
   }
 
   to {
-      color: #0aa51e;
-      transform: translateY(10px);
+    color: #0aa51e;
+    transform: translateY(10px);
   }
 }
 
@@ -147,7 +146,7 @@ header {
 
 .main-paragraph {
   margin: 10px 0;
-  font-family: 'Poppins' sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -165,79 +164,79 @@ header {
 
 @keyframes openclose {
   0% {
-      top: 0.2rem;
-      width: 0;
+    top: 0.2rem;
+    width: 0;
   }
 
-   5% {
-      width: 0;
+  5% {
+    width: 0;
   }
 
-   15% {
-        width: 230px;
+  15% {
+    width: 230px;
   }
 
   30% {
-      top: 0.2rem;
-      width: 230px;
+    top: 0.2rem;
+    width: 230px;
   }
 
   33% {
-      top: 0.2rem;
-      width: 0;
+    top: 0.2rem;
+    width: 0;
   }
 
   35% {
-      top: 0.2rem;
-      width: 0;
+    top: 0.2rem;
+    width: 0;
   }
 
   38% {
-      top: -4.5rem;
+    top: -4.5rem;
   }
 
   48% {
-      top: -4.5rem;
-      width: 190px;
+    top: -4.5rem;
+    width: 190px;
   }
 
   62% {
-      top: -4.5rem;
-      width: 190px;
+    top: -4.5rem;
+    width: 190px;
   }
 
   66% {
-      top: -4.5rem;
-      width: 0;
-      text-indent: 0;
-   }
+    top: -4.5rem;
+    width: 0;
+    text-indent: 0;
+  }
 
   71% {
-      top: -9rem;
-      width: 0;
-      text-indent: 5px;
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
   }
 
   86% {
-      top: -9rem;
-      width: 285px;
+    top: -9rem;
+    width: 285px;
   }
 
   95% {
-      top: -9rem;
-      width: 285px;
+    top: -9rem;
+    width: 285px;
   }
 
   98% {
-      top: -9rem;
-      width: 0;
-      text-indent: 5px;
+    top: -9rem;
+    width: 0;
+    text-indent: 5px;
   }
 
   100% {
-      top: 0;
-      width: 0;
-      text-indent: 0;
+    top: 0;
+    width: 0;
+    text-indent: 0;
   }
 }
 
@@ -302,7 +301,6 @@ header {
   font-size: 0.75em;
   font-weight: 500;
   color: #838282;
-
 }
 
 .circle {
@@ -313,77 +311,79 @@ header {
 
 .project-paragraph {
   font-size: 0.85em;
-  /* font-weight: 500; */
 }
 
 .project-data ul {
   display: flex;
-} 
+}
 
 .project-data ul li {
   margin: 20px 10px 0  0;
   padding: 5px 10px 5px 10px;
-  border-radius: 8px; 
+  border-radius: 8px;
   font-size: 0.6em;
-  color:#6070ff;
+  color: #6070ff;
   background: #ebebf3;
 }
 
 .image-2-b {
   display: none;
-  }
-  
+}
+
 .image-4-b {
   display: none;
-  }
+}
 
 button {
-    font-family: inherit;
-    background: #fff;
-    color: #396df2;
-    border: 1px solid #6070ff;
-    border-radius: 8px;
-    padding: 12px;
-    font-size: 1em;
-    font-weight: 500;
-    letter-spacing: 0.03em;
-    width: auto;
-    margin: 1em 0;
-    cursor: pointer;
+  font-family: inherit;
+  background: #fff;
+  color: #396df2;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 1em;
+  font-weight: 500;
+  letter-spacing: 0.03em;
+  width: auto;
+  margin: 1em 0;
+  cursor: pointer;
 }
 
 button:hover {
-    background: #6070ff;
-    box-shadow: 0 0.5em 1em #4053fc3d;
-    color: #fff;
+  background: #6070ff;
+  box-shadow: 0 0.5em 1em #4053fc3d;
+  color: #fff;
 }
 
 button:active {
-    background: #2230d2;
-    color: #fff;
-    transform: translateY(4px);
+  background: #2230d2;
+  color: #fff;
+  transform: translateY(4px);
 }
 
 button:disabled,
 button[disabled] {
-    border: 1px solid #c1c7d0;
-    color: #5e6c84;
+  border: 1px solid #c1c7d0;
+  color: #5e6c84;
 }
+
 /* projects section ends here */
 
 /* about-myself section starts here */
+
 .about-me {
   padding-top: 150px;
   padding-bottom: 150px;
-  font-size: 2rem;  
+  font-size: 2rem;
   background: #fff;
-  border-radius: 0 50px 0 0;;
+  border-radius: 0 50px 0 0;
   margin: 20px;
 }
 
 .about-me-details {
   margin: 30px;
 }
+
 .about-me p {
   font-size: 0.5em;
 }
@@ -397,7 +397,7 @@ button[disabled] {
 }
 
 .about-me ul {
-  margin: -10px 0 0 0 ;
+  margin: -10px 0 0 0;
 }
 
 .about-me-details button {
@@ -432,7 +432,7 @@ button[disabled] {
   font-size: 0.6em;
 }
 
-.skill-list li {
+.skill-list-li {
   background: #f4f4f5;
   margin: 15px;
   border-radius: 10px;
@@ -441,8 +441,8 @@ button[disabled] {
   align-items: center;
 }
 
-.skill-list li img{
-    margin: 15px;
+.skill-list li img {
+  margin: 15px;
 }
 
 .frameworks {
@@ -493,15 +493,15 @@ hr {
   background-image: url(./public/header-shapes\ mobile@2x.svg);
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color:#6070ff;
+  background-color: #6070ff;
   color: #fff;
   padding: 70px;
 }
 
 .form-details {
-    margin: 0;
-    margin-top: 100px;
-    padding-bottom: 30px;
+  margin: 0;
+  margin-top: 100px;
+  padding-bottom: 30px;
 }
 
 .contact-me h1 {
@@ -520,7 +520,8 @@ hr {
   flex-direction: column;
 }
 
-.form-inputs input, textarea {
+.form-inputs input,
+textarea {
   outline: none;
   padding: 10px;
   border-radius: 7px;
@@ -528,7 +529,7 @@ hr {
   margin-bottom: 10px;
 }
 
-.form-inputs>input:focus,
+.form-inputs > input:focus,
 textarea:focus {
   outline: none !important;
   color: #fff;
@@ -542,25 +543,24 @@ textarea:focus {
 /* contact-me section starts here */
 
 @media screen and (min-width: 768px) {
-
-/* header starts here */
+  /* header starts here */
 
   header {
     padding: 23px;
     padding-bottom: 75px;
   }
-  
+
   .menu-lines {
-    display: none;      
+    display: none;
   }
-  
+
   .menu {
     display: none;
   }
-  
-/* header ends here */
 
-/* main-page starts here */
+  /* header ends here */
+
+  /* main-page starts here */
   .logo > a {
     display: flex;
     align-items: center;
@@ -573,14 +573,12 @@ textarea:focus {
   .desk-ul {
     display: flex;
     top: 8px;
-    /* right: 120px; */
-    display: flex;
     margin-top: 25px;
     padding: 0;
     color: #6070ff;
     font-size: 18px;
   }
-  
+
   .desk-li {
     margin: 0 10px;
     cursor: pointer;
@@ -611,7 +609,7 @@ textarea:focus {
   .icons {
     margin-left: 60px;
   }
-  
+
   .main-h1 {
     margin: 10px 64px;
     font-size: 48px;
@@ -634,9 +632,9 @@ textarea:focus {
     margin: 0 60px;
   }
 
-/* main-page ends here */
+  /* main-page ends here */
 
-/* projects section starts here  */
+  /* projects section starts here  */
 
   .project {
     display: grid;
@@ -646,22 +644,17 @@ textarea:focus {
 
   .project-data {
     margin: 0 0 0 0;
-    }
+  }
 
   .project-image img {
     border-radius: 15px;
-    /* width: 100%; */
-    height: 70%;
-    /* height: fit-content; */
     display: block;
-    border-radius: 15px;
-    /* width:fit-content; */
     height: 100%;
   }
 
-/* projects section ends here  */
+  /* projects section ends here  */
 
-/* about-me starts here */
+  /* about-me starts here */
   .about-me {
     display: grid;
     grid-template-columns: 40% 60%;
@@ -684,6 +677,7 @@ textarea:focus {
     align-items: center;
     min-width: 120px;
   }
+
   /* about-me ends here  */
 
   /* contact-me starts here */
@@ -691,7 +685,7 @@ textarea:focus {
   .contact-me {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
     justify-content: center;
   }
 
@@ -712,7 +706,7 @@ textarea:focus {
   }
 
   .image-4-a {
-      display: none;
+    display: none;
   }
 
   .image-4-b {

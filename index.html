@@ -13,9 +13,8 @@
 <!-- header starts here -->
     <header>
       <a href="./index.html"><img id="logo" class="logo" src="./public/logo.png" alt="logo"> </a>
-      <nav>
         <div class="menu-lines" >
-          <button class="menu-button" onclick="toggleDropdown()"> <i class="fa fa-bars"></i></button> 
+          <div class="menu-button" onclick="toggleDropdown()"> <i class="fa fa-bars"></i></div> 
         </div>
         <div class="dropdown">
           <div id="dropdownContent" class="dropdown-content">
@@ -30,11 +29,10 @@
           <a href="#about-me" class="desk-li">About</a>
           <a href="#contact-me" class="desk-li">Contact</a>
         </ul>
-      </nav>
     </header>
 <!-- header ends here -->
 <!-- main page starts here  -->
-    <section id="main-page" class="main-page blur"">
+    <section id="main" class="main-page"">
       <div class="main-headline">
         <h1 class="main-h1">I'm Qaisar<br />Glad to see you!</h1>
         <p class="main-paragraph">
@@ -155,7 +153,7 @@
 <!-- projects section ends here  -->
 
 <!-- About me section ends here  -->
-    <section class="about-me">
+    <section id="about-me" class="about-me">
       <div class="about-me-details">
         <h1>About Myself</h1>
         <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -204,7 +202,7 @@
           <hr class="hr">
       </div>
     </section>
-    <section class="contact-me">
+    <section id="contact-me" class="contact-me">
       <div class="form-details">
         <h1>Contact Me</h1>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 

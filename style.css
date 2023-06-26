@@ -26,7 +26,9 @@ ul {
 /* header starts here  */
 
 header {
-  position: fixed;
+
+  /* position: fixed; */
+  
   width: 90vw;
   color: #6070ff;
   display: flex;
@@ -92,8 +94,8 @@ header {
   color: #fff;
   background-color: #6070ff;
   padding: 10%;
-  z-index: 999;
   opacity: 0.9;
+  z-index: 9999;
 }
 
 .dropdown-content a {
@@ -123,7 +125,7 @@ header {
   color: rgb(0, 0, 0);
 }
 
-.blurr {
+.blur {
   filter: blur(3px);
 }
 
@@ -179,7 +181,7 @@ header {
   animation: fadeIn 3s ease-in-out;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     color: #930101;
     transform: translateX(-40px);
@@ -189,7 +191,7 @@ header {
     color: #0aa51e;
     transform: translateY(10px);
   }
-}
+} */
 
 .main-h1:hover {
   color: #0aa51e;

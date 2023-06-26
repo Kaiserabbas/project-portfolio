@@ -27,8 +27,8 @@ ul {
 
 header {
   width: 90vw;
-  color: #6070ff;
   display: flex;
+  color: #6070ff;
   justify-content: space-between;
   align-items: center;
 }
@@ -52,7 +52,7 @@ header {
   }
 
   25% {
-    left: 200px;
+    left: 150px;
     top: 0;
   }
 

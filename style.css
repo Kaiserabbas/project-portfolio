@@ -26,9 +26,10 @@ ul {
 /* header starts here  */
 
 header {
-  width: 90vw;
+  width: 100vw;
   display: flex;
   color: #6070ff;
+  background: #fff;
   justify-content: space-between;
   align-items: center;
 }

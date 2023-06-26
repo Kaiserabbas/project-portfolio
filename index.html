@@ -12,30 +12,29 @@
   <body>
 <!-- header starts here -->
     <header>
-      <a href="./index.html"
-        ><img class="logo" src="./public/logo.png" alt="logo" />
-      </a>
+      <a href="./index.html"><img id="logo" class="logo" src="./public/logo.png" alt="logo"> </a>
       <nav>
-        <div class="menu-lines">
-          <button class="menu-button" onclick="toggleDropdown()"> <i class="fa fa-bars"></i></button>
+        <div class="menu-lines" >
+          <button class="menu-button" onclick="toggleDropdown()"> <i class="fa fa-bars"></i></button> 
         </div>
-         <div class="dropdown">
+        <div class="dropdown">
           <div id="dropdownContent" class="dropdown-content">
           <span class="close" onclick="closeDropdown()">&times;</span>
           <a href="./index.html" onclick="closeDropdown()">Portfolio</a>
           <a href="#about-me" onclick="closeDropdown()">About</a>
           <a href="#contact-me" onclick="closeDropdown()">Contact</a>
         </div>
+    </div>
         <ul class="desk-ul">
-          <li class="desk-li">Portfolio</li>
-          <li class="desk-li">About</li>
-          <li class="desk-li">Contact</li>
+          <a href="./index.html" class="desk-li">Portfolio</a>
+          <a href="#about-me" class="desk-li">About</a>
+          <a href="#contact-me" class="desk-li">Contact</a>
         </ul>
       </nav>
     </header>
 <!-- header ends here -->
 <!-- main page starts here  -->
-    <section class="main-page">
+    <section id="main-page" class="main-page blur"">
       <div class="main-headline">
         <h1 class="main-h1">I'm Qaisar<br />Glad to see you!</h1>
         <p class="main-paragraph">

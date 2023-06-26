@@ -76,6 +76,57 @@ header {
   display: none;
 }
 
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  right: 0;
+  top: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #6070ff;
+  padding: 10%;
+  z-index: 999;
+  opacity: 0.9;
+}
+
+.dropdown-content a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0 10px 20px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+.close {
+  margin-left: 95%;
+  font-size: 3em;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: rgb(0, 0, 0);
+}
+
+.blurr {
+  filter: blur(3px);
+}
+
 /* header ends here  */
 
 /* main page starts here */
@@ -554,8 +605,27 @@ textarea:focus {
     display: none;
   }
 
-  .menu {
+  .dropdown {
     display: none;
+  }
+  
+  .desk-ul {
+    position: absolute;
+    top: 8px;
+    right: 120px;
+    display: flex;
+    margin-top: 25px;
+    padding: 0;
+    color: #6070ff;
+    font-size: 18px;
+  }
+  
+  .desk-li {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #344563;
+    font-size: 15px;
+    text-decoration: none;
   }
 
   /* header ends here */
@@ -568,21 +638,6 @@ textarea:focus {
     color: #6070ff;
     margin: 0 0 0 100px;
     font-size: 18px;
-  }
-
-  .desk-ul {
-    display: flex;
-    top: 8px;
-    margin-top: 25px;
-    padding: 0;
-    color: #6070ff;
-    font-size: 18px;
-  }
-
-  .desk-li {
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 15px;
   }
 
   .main-page {

@@ -12,37 +12,27 @@
   <body>
 <!-- header starts here -->
     <header>
-      <a href="./index.html"
-        ><img class="logo" src="./public/logo.png" alt="logo" />
-      </a>
-      <nav>
-        <div class="menu-lines">
-          <svg
-            width="750px"
-            height="750px"
-            viewBox="0 0 32 32"
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-          >
-            <path
-              stroke="#6070FF"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M5 8h22M5 16h22M5 24h22"
-            />
-          </svg>
+      <a href="./index.html"><img id="logo" class="logo" src="./public/logo.png" alt="logo"> </a>
+        <div class="menu-lines" >
+          <div class="menu-button" onclick="toggleDropdown()"> <i class="fa fa-bars"></i></div> 
         </div>
+        <div class="dropdown">
+          <div id="dropdownContent" class="dropdown-content">
+          <span class="close" onclick="closeDropdown()">&times;</span>
+          <a href="#main" onclick="closeDropdown()">Portfolio</a>
+          <a href="#about-me" onclick="closeDropdown()">About</a>
+          <a href="#contact-me" onclick="closeDropdown()">Contact</a>
+        </div>
+    </div>
         <ul class="desk-ul">
-          <li class="desk-li">Portfolio</li>
-          <li class="desk-li">About</li>
-          <li class="desk-li">Contact</li>
+          <a href="#main" class="desk-li">Portfolio</a>
+          <a href="#about-me" class="desk-li">About</a>
+          <a href="#contact-me" class="desk-li">Contact</a>
         </ul>
-      </nav>
     </header>
 <!-- header ends here -->
 <!-- main page starts here  -->
-    <section class="main-page">
+    <section id="main" class="main-page"">
       <div class="main-headline">
         <h1 class="main-h1">I'm Qaisar<br />Glad to see you!</h1>
         <p class="main-paragraph">
@@ -163,7 +153,7 @@
 <!-- projects section ends here  -->
 
 <!-- About me section ends here  -->
-    <section class="about-me">
+    <section id="about-me" class="about-me">
       <div class="about-me-details">
         <h1>About Myself</h1>
         <p>Hello I’m a software developer! I can help you build a product , feature or website. Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hesitate to contact me.</p>
@@ -212,7 +202,7 @@
           <hr class="hr">
       </div>
     </section>
-    <section class="contact-me">
+    <section id="contact-me" class="contact-me">
       <div class="form-details">
         <h1>Contact Me</h1>
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 

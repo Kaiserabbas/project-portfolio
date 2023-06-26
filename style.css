@@ -26,10 +26,10 @@ ul {
 /* header starts here  */
 
 header {
-  position: fixed;
-  width: 90vw;
-  color: #6070ff;
+  width: 100vw;
   display: flex;
+  color: #6070ff;
+  background: #fff;
   justify-content: space-between;
   align-items: center;
 }
@@ -53,7 +53,7 @@ header {
   }
 
   25% {
-    left: 200px;
+    left: 150px;
     top: 0;
   }
 
@@ -74,6 +74,56 @@ header {
 
 .desk-ul {
   display: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100%;
+  right: 0;
+  top: 0;
+  margin: 0;
+  color: #fff;
+  background-color: #6070ff;
+  padding: 10%;
+  opacity: 0.9;
+  z-index: 9999;
+}
+
+.dropdown-content a {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  padding: 0 10px 20px 20px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.close {
+  margin-left: 95%;
+  font-size: 3em;
+  font-weight: 200;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: rgb(0, 0, 0);
+}
+
+.blur {
+  filter: blur(3px);
 }
 
 /* header ends here  */
@@ -128,7 +178,7 @@ header {
   animation: fadeIn 3s ease-in-out;
 }
 
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   from {
     color: #930101;
     transform: translateX(-40px);
@@ -138,7 +188,7 @@ header {
     color: #0aa51e;
     transform: translateY(10px);
   }
-}
+} */
 
 .main-h1:hover {
   color: #0aa51e;
@@ -278,7 +328,7 @@ header {
   display: block;
   border-radius: 15px;
   width: 100%;
-  height: fit-content;
+  height: auto;
 }
 
 .project-data {
@@ -554,8 +604,27 @@ textarea:focus {
     display: none;
   }
 
-  .menu {
+  .dropdown {
     display: none;
+  }
+
+  .desk-ul {
+    position: absolute;
+    top: 8px;
+    right: 120px;
+    display: flex;
+    margin-top: 25px;
+    padding: 0;
+    color: #6070ff;
+    font-size: 18px;
+  }
+
+  .desk-li {
+    margin: 0 10px;
+    cursor: pointer;
+    color: #344563;
+    font-size: 15px;
+    text-decoration: none;
   }
 
   /* header ends here */
@@ -568,21 +637,6 @@ textarea:focus {
     color: #6070ff;
     margin: 0 0 0 100px;
     font-size: 18px;
-  }
-
-  .desk-ul {
-    display: flex;
-    top: 8px;
-    margin-top: 25px;
-    padding: 0;
-    color: #6070ff;
-    font-size: 18px;
-  }
-
-  .desk-li {
-    margin: 0 10px;
-    cursor: pointer;
-    font-size: 15px;
   }
 
   .main-page {
@@ -619,7 +673,7 @@ textarea:focus {
 
   .main-paragraph {
     margin: 10px 0;
-    font-family: 'Poppins'sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;

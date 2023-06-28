@@ -51,12 +51,6 @@ const projectImage = document.createElement('div');
 projectImage.setAttribute('class', 'popup-image');
 mainProject.appendChild(projectImage);
 
-// const projectImg1 = document.createElement('img');
-// projectImg1.setAttribute = ('alt', 'Project-2');
-// projectImg1.setAttribute = ('class', 'img-1');
-// projectImg1.src = './public/Snapshoot Portfolio.png';
-// projectImage.appendChild(projectImg1);
-
 const projectImg2 = document.createElement('img');
 projectImg2.setAttribute('alt', 'Project-1');
 projectImg2.setAttribute('class', 'img-2');
@@ -122,17 +116,3 @@ function hidePopup() {
   popup.style.display = 'none';
 }
 closeButton.addEventListener('click', hidePopup);
-
-// function checkMediaQuery() {
-//     if (window.matchMedia("(min-width: 768px)").matches) {
-//         console.log("Media query matches (screen width is >= 768px)");
-//         projectImg1.style.display = "block";
-//         projectImg2.style.display = "none";
-//         }
-//     else {
-//             projectImg1.style.display = "none";
-//             projectImg2.style.display = "block";
-//     }
-// }
-// checkMediaQuery();
-// popup.addEventListener('resize', checkMediaQuery);

@@ -208,34 +208,27 @@
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
 I’d love to help with it!</p>
       </div>
-      <form action="https://formspree.io/f/mdovrdrq" method="Post"class="form-inputs" class="form">
-        <div>
-          <input type="text" name="name" id="name" minlength="3" maxlength="40"  placeholder="Please! enter your name" required>
+      <form id="form" class="form">
+        <div class="sub-form">
+          <label for="personname"></label>
+          <input type="text" placeholder="Enter your name." id="personname" />
+          <small></small>
+        </div>
+        <div class="sub-form">
           <label for="email"></label>
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation-circle"></i>
+          <input type="email" placeholder="Enter your email." id="email" />
+          <small></small>
         </div>
-        <div>
-          <label for="name"></label>
-          <small>Error message</small>
-          <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"  placeholder="Please enter your email" required>
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation-circle"></i>
-          <small>Error message</small>
-        </div>
-        <div>
+        <div class="sub-form">
           <label for="textarea"></label>
-          <textarea type="text" name="textarea" id="textarea" rows="10" columns="5" minlength="1" maxlength="500"  placeholder="Write your message here" required></textarea>
-          <i class="fas fa-check-circle"></i>
-          <i class="fas fa-exclamation-circle"></i>
-          <small>Error message</small>    
+          <textarea type="text" rows="10" cols="9" id="textarea" placeholder="Enter your message here"></textarea>
+          <small></small>
         </div>
+        <button type="submit">Submit</button>
       </form>
-
-      <button type="submit" class="submit-button">Get in touch</button>
     </section>
 <!-- About me section ends here  -->
-
+<script src="./form-validation.js"></script>
 
   </body>
 </html>

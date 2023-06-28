@@ -178,18 +178,6 @@ header {
   animation: fadeIn 3s ease-in-out;
 }
 
-/* @keyframes fadeIn {
-  from {
-    color: #930101;
-    transform: translateX(-40px);
-  }
-
-  to {
-    color: #0aa51e;
-    transform: translateY(10px);
-  }
-} */
-
 .main-h1:hover {
   color: #0aa51e;
 }

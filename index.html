@@ -208,17 +208,32 @@
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
 I’d love to help with it!</p>
       </div>
-      <form action="https://formspree.io/f/mdovrdrq" method="Post"class="form-inputs">
-        <label for="name"></label>
-        <input type="text" name="name" id="name" minlength="3" maxlength="40" required placeholder="Please! enter your name">
-        <label for="email"></label>
-        <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" required placeholder="Please enter your email">
-        <label for="textarea"></label>
-        <textarea type="text" name="textarea" id="textarea" rows="10" columns="5" minlength="1" maxlength="500" required placeholder="Write your message here"></textarea>
+      <form action="https://formspree.io/f/mdovrdrq" method="Post"class="form-inputs" class="form">
+        <div>
+          <input type="text" name="name" id="name" minlength="3" maxlength="40"  placeholder="Please! enter your name" required>
+          <label for="email"></label>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+        </div>
+        <div>
+          <label for="name"></label>
+          <small>Error message</small>
+          <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*"  placeholder="Please enter your email" required>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <div>
+          <label for="textarea"></label>
+          <textarea type="text" name="textarea" id="textarea" rows="10" columns="5" minlength="1" maxlength="500"  placeholder="Write your message here" required></textarea>
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>    
+        </div>
       </form>
+
       <button type="submit" class="submit-button">Get in touch</button>
     </section>
-
 <!-- About me section ends here  -->
 
 

@@ -2,7 +2,7 @@
 const form = document.getElementById('form');
 const personName = document.getElementById('personname');
 const email = document.getElementById('email');
-const textArea = document.getElementById('textarea')
+const textArea = document.getElementById('textarea');
 
 
 //defining a function for form input validation checks
@@ -21,6 +21,7 @@ function validationCheck() {
         //adding function if there's no error
 		checkValidation(personName);
 	}
+
     // adding function to check email type errors
 	if(emailValue === '') {
         //adding function to check input type errors
@@ -32,13 +33,15 @@ function validationCheck() {
         //adding function if there's no error
 		checkValidation(email);
 	}
+
 	if(textAreaValue === '') {
-        //adding function to check input type errors
-		checkError(textAreaValue, 'Enter your comments.');
+    //adding function to check inout type errors
+	checkError(textArea, 'Enter your comments here.');
 	} else {
-        //adding function if there's no error
-		checkValidation(textAreaValue);
+    //adding function if there's no error
+	checkValidation(textArea);
 	}
+
 }
 
 //defining function to check input type errors
@@ -49,6 +52,11 @@ function checkError(i, message) {
 	small.innerText = message;
 }
 //defining function if there's no error
+function checkValidation(i) {
+	const subForm = i.parentElement;
+	subForm.className = 'sub-form valid';
+}
+
 function checkValidation(i) {
 	const subForm = i.parentElement;
 	subForm.className = 'sub-form valid';

@@ -596,11 +596,16 @@ textarea:focus {
   margin-bottom: 5px;
 }
 
-.sub-form.valid input, textarea {
-  border-color: #2ecc71;
+.sub-form.valid input {
+  border-color: #03a848;
 }
 
-.sub-form.invalid input, textarea {
+.sub-form.valid textarea {
+  border-color: #03a848;
+}
+
+.sub-form.invalid input,
+textarea {
   border-color: #e74c3c;
 }
 

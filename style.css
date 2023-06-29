@@ -553,12 +553,7 @@ hr {
   font-weight: 300;
 }
 
-.form-inputs {
-  display: flex;
-  flex-direction: column;
-}
-
-.form-inputs input,
+.sub-form input,
 textarea {
   outline: none;
   padding: 10px;
@@ -567,16 +562,56 @@ textarea {
   margin-bottom: 10px;
 }
 
-.form-inputs > input:focus,
-textarea:focus {
-  outline: none !important;
-  color: #fff;
-  background-color: #323fb3;
-}
-
 .submit-button {
   margin-left: 0;
 }
+
+/* for validation starts here */
+
+.form {
+  padding: 30px 40px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.sub-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.sub-form label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.sub-form.valid input {
+  border-color: #03a848;
+}
+
+.sub-form.invalid input,
+textarea {
+  border-color: #e74c3c;
+}
+
+.sub-form.valid textarea {
+  border-color: #03a848;
+}
+
+.sub-form small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden;
+}
+
+.sub-form.invalid small {
+  visibility: visible;
+}
+
+/* for validation ends here */
 
 /* contact-me section starts here */
 

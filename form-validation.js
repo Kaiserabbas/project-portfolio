@@ -46,6 +46,8 @@ function validationCheck() {
   if (emailValue === '') {
     // adding function to check input type errors
     checkError(email, 'Enter your email to proceed.');
+  } else if (!(emailValue === emailValue.toLowerCase())) {
+    checkError(email, 'Enter email in lowercase');
   } else if (!isEmail(emailValue)) {
     // adding function to check input type errors
     checkError(email, 'Enter a valid email.');

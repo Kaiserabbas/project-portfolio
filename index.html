@@ -119,23 +119,24 @@
         <p>If you have an application you are interested in developing, a feature that you need built or a project that needs coding. 
 I’d love to help with it!</p>
       </div>
-      <form id="form" class="form">
+      <form action="https://formspree.io/f/mdovrdrq"
+  method="POST" id="form" class="form">
         <div class="sub-form">
           <label for="personname"></label>
-          <input type="text" placeholder="Enter your name." id="personname" />
+          <input type="text" name="personname" placeholder="Enter your name." id="personname" required/>
           <small></small>
         </div>
         <div class="sub-form">
           <label for="email"></label>
-          <input type="email" placeholder="Enter your email." id="email" />
+          <input type="email" name="email" placeholder="Enter your email." id="email" required/>
           <small></small>
         </div>
         <div class="sub-form">
           <label for="textarea"></label>
-          <textarea type="text" rows="10" cols="9" placeholder="Enter your comments." id="textarea" ></textarea>
+          <textarea type="text" name="textarea" rows="10" cols="9" placeholder="Enter your comments." id="textarea" required></textarea>
           <small></small>
         </div>
-        <button type="submit">Submit</button>
+        <button type="submit" id="submit">Submit</button>
       </form>
     </section>
 <!-- About me section ends here  -->

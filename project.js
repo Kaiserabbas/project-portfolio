@@ -1,21 +1,23 @@
 // Javascript Object
 const projects = [
   {
-    projectImg: './public/Snapshoot Portfolio.png',
-    heading: 'Tonic',
-    projectSubdetails: 'CANOPY',
-    projectTitle: 'Back End Dev',
-    projectYear: '2015',
-    projectParagraph: 'A daily selection of privately personlized reads; no accounts of or sign-ups required.',
+    projectImg: './public/11.png',
+    heading: 'To-Do List',
+    projectSubdetails: 'To-Do List Application',
+    projectTitle: 'Daily Tasks List',
+    projectYear: '2023',
+    projectParagraph:
+      'The To-Do List Website is a simple and easy-to-use website that allows you to keep track of your tasks. You can create tasks, set deadlines, and prioritize your tasks. You can also view your tasks in a variety of ways, such as by due date, priority, or category..',
     langLi: ['HTML', 'CSS', 'JavaScript'],
   },
   {
-    projectImg: './public/Snapshoot Portfolio (1).png',
-    heading: 'Multi-Post Stories',
-    projectSubdetails: 'FACEBOOK',
-    projectTitle: 'Back End Dev',
-    projectYear: '2015',
-    projectParagraph: 'A daily selection of privately personlized reads; no accounts of or sign-ups required.',
+    projectImg: './public/12.png',
+    heading: 'To-Do List',
+    projectSubdetails: 'To-Do List Application',
+    projectTitle: 'Daily Tasks List',
+    projectYear: '2023',
+    projectParagraph:
+      'The To-Do List Website is a simple and easy-to-use website that allows you to keep track of your tasks. You can create tasks, set deadlines, and prioritize your tasks. You can also view your tasks in a variety of ways, such as by due date, priority, or category..',
     langLi: ['HTML', 'CSS', 'JavaScript'],
   },
   {
@@ -24,7 +26,8 @@ const projects = [
     projectSubdetails: 'FACEBOOK',
     projectTitle: 'Back End Dev',
     projectYear: '2015',
-    projectParagraph: 'A daily selection of privately personlized reads; no accounts of or sign-ups required.',
+    projectParagraph:
+      'A daily selection of privately personlized reads; no accounts of or sign-ups required.',
     langLi: ['HTML', 'CSS', 'JavaScript'],
   },
   {
@@ -33,7 +36,8 @@ const projects = [
     projectSubdetails: 'UBER',
     projectTitle: 'Back End Dev',
     projectYear: '2015',
-    projectParagraph: 'A daily selection of privately personlized reads; no accounts of or sign-ups required.',
+    projectParagraph:
+      'A daily selection of privately personlized reads; no accounts of or sign-ups required.',
     langLi: ['HTML', 'CSS', 'JavaScript'],
   },
 ];
@@ -47,7 +51,7 @@ const parent = document.body;
 parent.insertBefore(projectContainer, parent.children[2]);
 
 // project cards creation and setting attributes
-projects.forEach(project => {
+projects.forEach((project) => {
   const mainProject = document.createElement('div');
   mainProject.setAttribute('class', 'project');
   projectContainer.appendChild(mainProject);
@@ -102,7 +106,7 @@ projects.forEach(project => {
   projectUl.setAttribute('class', 'lang-list');
 
   // Inserting elements in project-data Ul div --> li
-  project.langLi.forEach(item => {
+  project.langLi.forEach((item) => {
     const listItem = document.createElement('li');
     listItem.setAttribute('class', 'lang-li');
     listItem.textContent = item;

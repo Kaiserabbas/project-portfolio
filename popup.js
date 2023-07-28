@@ -22,12 +22,12 @@ mainProject.append(closeButton);
 const projectHeading = document.createElement('h1');
 projectHeading.setAttribute('class', 'popup-heading');
 mainProject.appendChild(projectHeading);
-projectHeading.innerText = 'Tonic';
+projectHeading.innerText = 'To-Do List';
 
 const projectSubDetails = document.createElement('p');
 projectSubDetails.setAttribute('class', 'popup-sub-details');
 mainProject.appendChild(projectSubDetails);
-projectSubDetails.innerText = 'CANOPY';
+projectSubDetails.innerText = 'To-Do List Application';
 
 const faIcon1 = document.createElement('i');
 faIcon1.setAttribute('class', 'circle fa-solid fa-circle');
@@ -36,7 +36,7 @@ projectSubDetails.appendChild(faIcon1);
 const projectTitle = document.createElement('span');
 projectTitle.setAttribute = ('class', 'popup-title');
 projectSubDetails.appendChild(projectTitle);
-projectTitle.innerText = 'Back End Dev';
+projectTitle.innerText = 'Daily Tasks List';
 
 const faIcon2 = document.createElement('i');
 faIcon2.setAttribute('class', 'circle fa-solid fa-circle');
@@ -45,7 +45,7 @@ projectSubDetails.appendChild(faIcon2);
 const projectYear = document.createElement('span');
 projectYear.setAttribute('class', 'popup-year');
 projectSubDetails.appendChild(projectYear);
-projectYear.innerText = '2015';
+projectYear.innerText = '2023';
 
 const projectImage = document.createElement('div');
 projectImage.setAttribute('class', 'popup-image');
@@ -54,7 +54,7 @@ mainProject.appendChild(projectImage);
 const projectImg2 = document.createElement('img');
 projectImg2.setAttribute('alt', 'Project-1');
 projectImg2.setAttribute('class', 'img-2');
-projectImg2.src = './public/Snapshoot Portfolio-Desktop.png';
+projectImg2.src = './public/11.png';
 projectImage.appendChild(projectImg2);
 
 const projectData = document.createElement('div');
@@ -64,7 +64,8 @@ mainProject.appendChild(projectData);
 const projectParagraph = document.createElement('p');
 projectParagraph.setAttribute('class', 'popup-paragraph');
 projectData.appendChild(projectParagraph);
-projectParagraph.innerText = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent";
+projectParagraph.innerText =
+  'The To-Do List Application is a simple web-based task management tool that allows users to create, view, edit, and delete tasks. This application is designed to help individuals organize their tasks and keep track of their daily activities. This is a simple web application that allows you to manage your to-do list. You can add, edit, and remove tasks as needed. The application is built using HTML, CSS, and JavaScript';
 
 const projectListButton = document.createElement('div');
 projectListButton.setAttribute('class', 'popup-list-button');
@@ -92,9 +93,15 @@ projectListButton.append(lastButton);
 const projectButton1 = document.createElement('button');
 projectButton1.setAttribute('type', 'button');
 projectButton1.setAttribute('class', 'btn');
-projectButton1.innerText = 'See live';
+const seeLiveLink = document.createElement('a');
+seeLiveLink.setAttribute(
+  'href',
+  'https://rawcdn.githack.com/Kaiserabbas/myday-todo/41c6fcd29c0191896ed4532e3911319e5bdb14e2/dist/index.html'
+);
+seeLiveLink.innerText = 'See live';
+projectButton1.append(seeLiveLink);
 const seeLive = document.createElement('img');
-seeLive.setAttribute('alt', 'see live');
+seeLive.setAttribute('alt', '');
 seeLive.setAttribute('class', 'btn-1-img');
 seeLive.src = './public/arrow-up.png';
 projectButton1.append(seeLive);
@@ -103,7 +110,10 @@ lastButton.append(projectButton1);
 const projectButton2 = document.createElement('button');
 projectButton2.setAttribute('type', 'button');
 projectButton2.setAttribute('class', 'btn');
-projectButton2.innerText = 'See source';
+const seeSourceLink = document.createElement('a');
+seeSourceLink.setAttribute('href', 'https://github.com/Kaiserabbas/myday-todo');
+seeSourceLink.innerText = 'See Source';
+projectButton2.append(seeSourceLink);
 const seeSource = document.createElement('img');
 seeSource.setAttribute('alt', 'see source');
 seeSource.setAttribute('class', 'btn-2-img');
